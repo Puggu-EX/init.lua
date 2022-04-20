@@ -157,9 +157,11 @@ local config = {
     set.relativenumber = true
     -- set.foldmethod = 'indent'
     -- set.foldopen = true
+    set.expandtab = false
 
     -- Set key bindings
     map("n", "<C-s>", ":w!<CR>", opts)
+    map("i", "<C-l>", "<Esc>A;<Enter>", opts)
     -- map("n", "<silent><leader>1", "<Cmd>tabnew<CR>", opts)
 
     -- Set autocommands
